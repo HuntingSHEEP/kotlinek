@@ -1,3 +1,80 @@
+//==------------------------------========---------------------------------------==
+//===----------------              SŁIFT               -------------------------===
+//==------------------------------========---------------------------------------==
+/*
+
+    protocol Figura{
+        mutating func pole() -> Int
+        mutating func info()
+    }
+
+    class  Prostokat: Figura{         << ADOPTING PROTOCOL FIGURA
+        init{}
+
+        override func pole() -> Int{
+            return 0
+        }
+
+        override func info(){
+            print("A JA WIEM")
+        }
+    }
+
+=============
+
+    class Figura{
+        var zmienna:Int
+
+        init(z:Int){
+            self.zmienna = z
+        }
+
+        func pole() -> Int{
+            return 0
+        }
+    }
+
+    class Prostokat:Figura{
+        var lista = [1,2,4,2,1]
+
+        init(){
+
+        }
+
+        deinit{
+         // uruchamia się po wywołaniu dowolnej metody???? albo raczej dekonstruktor
+        }
+
+        override func pole() -> Int{
+            return 1
+        }
+
+    }
+
+============
+NIE POTRZEBA ŻADNEGO MAIN????
+
+protocol - interfejs?
+mutating - abstract?
+
+var - zmienna, tak jak var w Kotlinie
+let - stała, tak jak val w Kotlinie
+func - deklaracja funkcji, tak jak fun w Kotlinie
+->   - tak jak :Int w funkcji w kotlinie
+
+
+
+
+ */
+
+
+
+
+
+//==------------------------------========---------------------------------------==
+//===----------------              KOTLIN              -------------------------===
+//==------------------------------========---------------------------------------==
+
 // =================================~~~~~~~~~~~~~===============================
 // =======                               MAIN                           ========
 // =================================~~~~~~~~~~~~~===============================
@@ -5,6 +82,8 @@
  * Deklaracja funkcji zaczyna się od słowa kluczowego fun,
  * w kotlinie program zaczyna się od funkcji main(args : Array<String>).
  * Nie ma obowiązku tworzenia klas (tak jak w JAVIE) bo kompilator robi to za nas.
+ *
+ * fun main(args: Array<String>){}
  */
 
 // =================================~~~~~~~~~~~~~===============================
@@ -79,6 +158,8 @@
 
  Arrays
  ------
+    val numbers = intArrayOf(1, 4, 42, -3)
+
 
  Strings
  -------
